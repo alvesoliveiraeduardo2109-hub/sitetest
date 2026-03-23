@@ -4,41 +4,76 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="style.css">
-  
+  <title>2º Sistemas CEEP</title>
+</head>
+<body>
+
   <div id="loading">
     <div class="pixel-loading">
-      <div class="pixel-text"></div>
+      <div class="pixel-text">.</div>
       <div class="pixel-bar">
         <div class="pixel-fill"></div>
       </div>
     </div>
   </div>
-  <title>aaaaaaaaaaaaabbbbbcccccccccccdddddddddddddddddeeeeeeeeeeeeeeefffffffffffff</title>
-</head>
-<body>
-  <div class="container">
+
+  <div id="conteudo" class="hidden">
     <h1>2º Sistemas CEEP</h1>
-    <ul class="lista-animada" id="lista-alunos">
-      <h2>Os protagonistas!</h2>
-      <li data-descricao="O protagonista que realmente importa">Eduardo Alves <span class="doidosono">😎</span></li>
-      <li data-descricao="franga ne">Eduardo Henrique <span class="doidosono">🐔</span></li>
-      <li data-descricao="Rainha do deboche">Ingllidy <span class="doidosono">😪</span></li>
-      <li data-descricao="AHHHHHH BABU">Sergio <span class="doidosono">🥱</span></li>
-      <li data-descricao="Recordista em faltar">Myllena <span class="doidosono">😴</span></li>
-      <li data-descricao="Preciso falar?">Bruna <span class="doidosono">🧏🏻‍♀️</span></li>
-    </ul>
-    <footer>
-      Turma mais foda do CEEP<br>
-    </footer>
+    <div class="tabs">
+      <button class="tab-button active" data-tab="protagonistas">Protagonistas</button>
+      <button class="tab-button" data-tab="aba2">Interclasse</button>
+      <button class="tab-button" data-tab="aba3">Cursos</button>
+      <button class="tab-button" data-tab="aba4">Jogos</button>
+    </div>
+
+    <div id="protagonistas" class="tab-content active">
+      <div class="container">
+        <ul class="lista-animada" id="lista-alunos">
+          <h2>Os protagonistas!</h2>
+          <li data-descricao="O protagonista que realmente importa">Eduardo Alves <span class="doidosono">😎</span></li>
+          <li data-descricao="franga ne">Eduardo Henrique <span class="doidosono">🐔</span></li>
+          <li data-descricao="Rainha do deboche">Ingllidy <span class="doidosono">😪</span></li>
+          <li data-descricao="AHHHHHH BABU">Sergio <span class="doidosono">🥱</span></li>
+          <li data-descricao="Recordista em faltar">Myllena <span class="doidosono">😴</span></li>
+          <li data-descricao="Preciso falar?">Bruna <span class="doidosono">🧏🏻‍♀️</span></li>
+        </ul>
+        <footer>
+          Turma mais foda do CEEP<br>
+        </footer>
+      </div>
+    </div>
+
+    <div id="aba2" class="tab-content">
+      <div class="container">
+        <h2>Interclasse</h2>
+        <p>ganhamo</p>
+      </div>
+    </div>
+
+    <div id="aba3" class="tab-content">
+      <div class="container">
+        <h2>Cursos</h2>
+        <p>Basicamente o nome Ulisses representa o curso</p>
+      </div>
+    </div> 
+
+    <div id="aba4" class="tab-content">
+      <div class="game-wrapper">
+        <h2>Mini jogo pq to com tedio</h2>
+        <p>PS: Coletar os slime verde</p>
+        <canvas id="gameCanvas" width="800" height="500"></canvas>
+        <div id="gameInfo">
+          Pontos: <span id="score">0</span> | Vida: <span id="health">3</span>
+        </div>
+      </div>
+    </div>
+
   </div>
 
+  <img src="https://i.pinimg.com/originals/b1/81/32/b18132d369b1bf71cfffd19334b6e73a.gif" alt="Gatinho fofo" onclick="clicou('na imagem');">
+
+  <button onclick="clicou('no botao');">Clique aqui rapa</button>
+
+  <script src="functions.js" defer></script>
 </body>
-<img src="./ddddddddddddddd.png" alt="Gatinho fofo" onclick="clicou('na imagem');" />
-
-<button onclick="clicou('no botao');">Clique aqui rapa</button>
 </html>
-
-
-  <script src="./functions.js" defer></script>
-
-
